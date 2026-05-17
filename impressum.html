@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | S&N Media</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="S&N Media - Impressum und rechtliche Angaben gemäß § 5 TMG für die Social Media Agentur Karl Niemann & Florian Schulte GbR.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#030712',
+                        brandBlue: '#0066FF',
+                        brandCyan: '#276BE1',
+                        glassBg: 'rgba(15, 23, 42, 0.45)',
+                        glassBorder: 'rgba(255, 255, 255, 0.08)',
+                    },
+                    boxShadow: {
+                        'neon-glow': '0 0 20px rgba(0, 102, 255, 0.35)',
+                        'cyan-glow': '0 0 25px rgba(0, 240, 255, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Style Adjustments -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Classes */
+        .glass-card {
+            background: rgba(10, 17, 40, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 102, 255, 0.3);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 240, 255, 0.5);
+        }
+
+        /* Glow effects */
+        .glow-text {
+            text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen selection:bg-brandCyan selection:text-darkBg">
+
+    <!-- Gradient Background Highlights -->
+    <div class="fixed top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-brandBlue/10 blur-[150px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[700px] h-[700px] rounded-full bg-brandCyan/5 blur-[180px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full bg-darkBg/75 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo hintergrundlos.png" alt="Logo" class="h-10 w-auto filter drop-shadow-[0_0_8px_rgba(0,102,255,0.4)] transition-transform duration-300 group-hover:scale-105" onerror="this.style.display='none'">
+                
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-blue-100 to-brandCyan bg-clip-text text-transparent">S&N MEDIA</span>
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-brandCyan/80 font-semibold -mt-1">Social Media Agentur</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html#about" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Über uns</a>
+                <a href="index.html#leistungen" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Leistungen</a>
+                <a href="index.html#konfigurator" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Preisrechner</a>
+                <a href="index.html#kontakt" class="px-5 py-2.5 rounded-full bg-blue-600 hover:bg-brandCyan hover:text-darkBg font-semibold text-sm transition-all duration-300 shadow-neon-glow hover:shadow-cyan-glow border border-brandBlue/30 hover:border-brandCyan/50">
+                    Jetzt anfragen <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex text-gray-400 hover:text-brandCyan focus:outline-none transition-colors" aria-label="Menü öffnen">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-lg border-b border-white/5 py-6 px-4 flex flex-col gap-4">
+            <a href="index.html#about" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Über uns</a>
+            <a href="index.html#leistungen" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Leistungen</a>
+            <a href="index.html#konfigurator" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Preisrechner</a>
+            <a href="index.html#kontakt" class="mobile-link text-center mt-2 px-5 py-3 rounded-xl bg-blue-600 font-bold text-sm transition-all duration-300 shadow-neon-glow">
+                Jetzt anfragen <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- Back Button to Home -->
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm text-brandCyan hover:text-white mb-8 transition-colors group">
+                <i class="fa-solid fa-arrow-left transition-transform group-hover:-translate-x-1"></i> Zurück zur Startseite
+            </a>
+
+            <!-- Document Title -->
+            <div class="mb-12">
+                <span class="text-xs font-bold text-brandCyan uppercase tracking-[0.2em]">Rechtliches</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-2 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">Impressum</h1>
+            </div>
+
+            <!-- Impressum Content Card -->
+            <div class="glass-card rounded-2xl p-8 sm:p-10 border-white/10 space-y-8 shadow-neon-glow">
+                
+                <!-- Section 1: Firmendaten -->
+                <div>
+                    <h2 class="text-lg font-bold text-brandCyan mb-2 uppercase tracking-wide border-b border-white/5 pb-2">Herausgeber</h2>
+                    <p class="text-white text-xl font-semibold mb-1">S&N Media</p>
+                    <p class="text-gray-400 text-sm">Karl Niemann & Florian Schulte GbR</p>
+                </div>
+
+                <!-- Section 2: Angaben nach TMG -->
+                <div>
+                    <h2 class="text-lg font-bold text-brandCyan mb-2 uppercase tracking-wide border-b border-white/5 pb-2">Angaben gemäß § 5 TMG</h2>
+                    <p class="text-gray-300 leading-relaxed text-sm">
+                        Zaunkönigweg 58<br>
+                        26209 Hatten
+                    </p>
+                </div>
+
+                <!-- Section 3: Vertretung -->
+                <div>
+                    <h2 class="text-lg font-bold text-brandCyan mb-2 uppercase tracking-wide border-b border-white/5 pb-2">Vertreten durch</h2>
+                    <p class="text-gray-300 leading-relaxed text-sm">
+                        Karl Niemann<br>
+                        Florian Schulte
+                    </p>
+                </div>
+
+                <!-- Section 4: Kontakt -->
+                <div>
+                    <h2 class="text-lg font-bold text-brandCyan mb-2 uppercase tracking-wide border-b border-white/5 pb-2">Kontakt</h2>
+                    <div class="space-y-3 mt-3 text-sm text-gray-300">
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brandCyan w-5"></i>
+                            <span>Telefon: <a href="tel:01772102172" class="hover:text-brandCyan transition-colors">0177/2102172</a></span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brandCyan w-5"></i>
+                            <span>E-Mail: <a href="mailto:sn@media-oldenburg.de" class="hover:text-brandCyan transition-colors">sn@media-oldenburg.de</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 5: Streitschlichtung -->
+                <div class="space-y-4">
+                    <h2 class="text-lg font-bold text-brandCyan mb-2 uppercase tracking-wide border-b border-white/5 pb-2">EU-Streitschlichtung</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="text-brandCyan hover:underline hover:text-white transition-colors break-all">
+                            https://ec.europa.eu/consumers/odr/
+                        </a>.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                    </p>
+                </div>
+
+                <!-- Section 6: Verbraucherstreitbeilegung -->
+                <div>
+                    <h2 class="text-lg font-bold text-brandCyan mb-3 uppercase tracking-wide border-b border-white/5 pb-2">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area (Matched with Landing Page) -->
+    <footer class="bg-black/80 border-t border-white/5 pt-16 pb-8 relative z-10 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Col 1: Brand & Intro -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo hintergrundlos.png" alt="S&N Media Logo" class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(0,102,255,0.4)]" onerror="this.style.display='none'">
+                        <span class="text-lg font-bold text-white tracking-wider">S&N Media</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Deine strategische Partner-Agentur für moderne Online-Sichtbarkeit im Nordwesten. Wir machen Social Media rentabel für den Mittelstand.
+                    </p>
+                    <div class="flex gap-4 text-lg">
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-brandCyan transition-colors">Startseite</a></li>
+                        <li><a href="index.html#about" class="hover:text-brandCyan transition-colors">Über Uns</a></li>
+                        <li><a href="index.html#leistungen" class="hover:text-brandCyan transition-colors">Unsere Leistungen</a></li>
+                        <li><a href="index.html#konfigurator" class="hover:text-brandCyan transition-colors">Live-Rechner</a></li>
+                        <li><a href="index.html#kontakt" class="hover:text-brandCyan transition-colors">Jetzt anfragen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Regionale Abdeckung -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Einzugsgebiet</h4>
+                    <ul class="space-y-2 text-xs text-gray-500">
+                        <li>Oldenburg, Hatten & Sandkrug</li>
+                        <li>Wardenburg & Landkreis Oldenburg</li>
+                        <li>Wildeshausen, Rastede, Wiefelstede</li>
+                        <li>Bad Zwischenahn, Edewecht & Westerstede</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Kontakt Schnellinfos -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Direktkontakt</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brandCyan"></i> sn@media-oldenburg.de</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brandCyan"></i> +49 (0) 177 2102172</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brandCyan"></i> Hatten, Deutschland</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Local SEO Text-Area -->
+            <div class="pt-8 border-t border-white/5 text-[10px] text-gray-600 text-center leading-relaxed">
+                <p>
+                    S&N Media betreut KMUs und Dienstleister im Nordwesten Deutschlands. Unser Fokus liegt auf erstklassigem Social-Media-Marketing in den Städten und Gemeinden: Oldenburg, Landkreis Oldenburg, Wildeshausen, Rastede, Wiefelstede, Bad Zwischenahn, Westerstede, Hatten, Edewecht, Sandkrug und Wardenburg.
+                </p>
+                <div class="flex justify-center gap-4 mt-4 text-xs font-semibold">
+                    <a href="impressum.html" class="text-brandCyan hover:text-white transition-colors">Impressum</a>
+                    <span class="text-gray-800">|</span>
+                    <a href="#" onclick="alert('Datenschutzerklärung: Personenbezogene Daten werden nur zur Beantwortung der Anfragen genutzt und nicht an Dritte weitergegeben.')" class="hover:text-brandCyan transition-colors">Datenschutz</a>
+                </div>
+                <p class="mt-4">&copy; 2026 S&N Media. Alle Rechte vorbehalten.</p>
+                <p class="mt-2 text-xs">Diese Webseite wurde erstellt durch <a href="https://tvs-digital.de" target="_blank" class="text-white hover:text-brandCyan transition-colors font-medium">TVS Digital</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Control
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
