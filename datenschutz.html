@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung | S&N Media</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="S&N Media - Datenschutzerklärung gemäß DSGVO für die Social Media Agentur Karl Niemann & Florian Schulte GbR. Erfahren Sie, wie wir Ihre Daten schützen.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#030712',
+                        brandBlue: '#0066FF',
+                        brandCyan: '#276BE1',
+                        glassBg: 'rgba(15, 23, 42, 0.45)',
+                        glassBorder: 'rgba(255, 255, 255, 0.08)',
+                    },
+                    boxShadow: {
+                        'neon-glow': '0 0 20px rgba(0, 102, 255, 0.35)',
+                        'cyan-glow': '0 0 25px rgba(0, 240, 255, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Style Adjustments -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Classes */
+        .glass-card {
+            background: rgba(10, 17, 40, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 102, 255, 0.3);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 240, 255, 0.5);
+        }
+
+        /* Glow effects */
+        .glow-text {
+            text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen selection:bg-brandCyan selection:text-darkBg">
+
+    <!-- Gradient Background Highlights -->
+    <div class="fixed top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-brandBlue/10 blur-[150px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[700px] h-[700px] rounded-full bg-brandCyan/5 blur-[180px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full bg-darkBg/75 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo hintergrundlos.png" alt="Logo" class="h-10 w-auto filter drop-shadow-[0_0_8px_rgba(0,102,255,0.4)] transition-transform duration-300 group-hover:scale-105" onerror="this.style.display='none'">
+                
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-blue-100 to-brandCyan bg-clip-text text-transparent">S&N MEDIA</span>
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-brandCyan/80 font-semibold -mt-1">Social Media Agentur</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html#about" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Über uns</a>
+                <a href="index.html#leistungen" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Leistungen</a>
+                <a href="index.html#konfigurator" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Preisrechner</a>
+                <a href="index.html#kontakt" class="px-5 py-2.5 rounded-full bg-blue-600 hover:bg-brandCyan hover:text-darkBg font-semibold text-sm transition-all duration-300 shadow-neon-glow hover:shadow-cyan-glow border border-brandBlue/30 hover:border-brandCyan/50">
+                    Jetzt anfragen <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex text-gray-400 hover:text-brandCyan focus:outline-none transition-colors" aria-label="Menü öffnen">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-lg border-b border-white/5 py-6 px-4 flex flex-col gap-4">
+            <a href="index.html#about" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Über uns</a>
+            <a href="index.html#leistungen" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Leistungen</a>
+            <a href="index.html#konfigurator" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Preisrechner</a>
+            <a href="index.html#kontakt" class="mobile-link text-center mt-2 px-5 py-3 rounded-xl bg-blue-600 font-bold text-sm transition-all duration-300 shadow-neon-glow">
+                Jetzt anfragen <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- Back Button to Home -->
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm text-brandCyan hover:text-white mb-8 transition-colors group">
+                <i class="fa-solid fa-arrow-left transition-transform group-hover:-translate-x-1"></i> Zurück zur Startseite
+            </a>
+
+            <!-- Document Title -->
+            <div class="mb-12">
+                <span class="text-xs font-bold text-brandCyan uppercase tracking-[0.2em]">Rechtliches</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-2 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">Datenschutzerklärung</h1>
+            </div>
+
+            <!-- Datenschutz Content Card -->
+            <div class="glass-card rounded-2xl p-8 sm:p-10 border-white/10 space-y-10 shadow-neon-glow text-gray-300 text-sm leading-relaxed">
+                
+                <!-- Section: Allgemeine Hinweise -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">1. Allgemeine Hinweise und Pflichtinformationen</h2>
+                    <p>
+                        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+                    </p>
+                    <h3 class="text-white font-semibold mt-4">Datenerfassung auf dieser Website</h3>
+                    <p>
+                        Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.
+                    </p>
+                    <p>
+                        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein Kontaktformular oder den Preisrechner eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                    </p>
+                </div>
+
+                <!-- Section: Responsibles -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">2. Hinweis zur Verantwortlichen Stelle</h2>
+                    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+                    <div class="p-4 bg-white/5 rounded-lg border border-white/10 mt-2">
+                        <p class="text-white font-semibold text-base">S&N Media</p>
+                        <p class="text-gray-400">Karl Niemann & Florian Schulte GbR</p>
+                        <p class="mt-2">Zaunkönigweg 58<br>26209 Hatten</p>
+                        <p class="mt-2 flex flex-col sm:flex-row sm:gap-4">
+                            <span><strong>Telefon:</strong> <a href="tel:01772102172" class="hover:text-brandCyan transition-colors">0177/2102172</a></span>
+                            <span><strong>E-Mail:</strong> <a href="mailto:sn@media-oldenburg.de" class="hover:text-brandCyan transition-colors">sn@media-oldenburg.de</a></span>
+                        </p>
+                    </div>
+                    <p class="mt-3">
+                        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+                    </p>
+                </div>
+
+                <!-- Section: Hosting (GitHub Pages & Azure) -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">3. Hosting und Content Delivery Networks (CDN)</h2>
+                    
+                    <h3 class="text-white font-semibold">GitHub Pages</h3>
+                    <p>
+                        Wir hosten das Frontend unserer Website über den Dienst <strong>GitHub Pages</strong>. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA (nachfolgend „GitHub“).
+                    </p>
+                    <p>
+                        Beim Abruf dieser Website stellt Ihr Browser eine Verbindung zu den Servern von GitHub her. Hierbei werden unumgänglich Logfiles (u.a. IP-Adresse, Datum und Uhrzeit des Abrufs, Browsertyp) verarbeitet, um die Website stabil und sicher auszuliefern. Die Datenübertragung in die USA ist durch das EU-US Data Privacy Framework sowie durch die Standardvertragsklauseln der EU-Kommission abgesichert. Zudem haben wir mit GitHub einen Vertrag über Auftragsverarbeitung (AVV) geschlossen.
+                    </p>
+                    <p>
+                        <strong>Rechtsgrundlage:</strong> Der Einsatz von GitHub Pages erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer stabilen, performanten und sicheren Bereitstellung unserer Webpräsenz).
+                    </p>
+
+                    <h3 class="text-white font-semibold mt-4">Microsoft Azure</h3>
+                    <p>
+                        Ergänzende Backend-Dienste, Datenverarbeitungsprozesse oder Infrastrukturen dieser Website werden auf der Cloud-Plattform <strong>Microsoft Azure</strong> betrieben. Anbieter ist die Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irland (Mutterkonzern: Microsoft Corp., USA).
+                    </p>
+                    <p>
+                        Die Speicherung und Verarbeitung der Daten erfolgt primär auf Servern innerhalb der Europäischen Union. Da nicht ausgeschlossen werden kann, dass Metadaten oder Support-Zugriffe über die US-Muttergesellschaft abgewickelt werden, ist das datenschutzrechtliche Schutzniveau über das EU-US Data Privacy Framework sowie die EU-Standardvertragsklauseln garantiert. Ein entsprechender Vertrag zur Auftragsverarbeitung (AVV) liegt vor.
+                    </p>
+                    <p>
+                        <strong>Rechtsgrundlage:</strong> Die Nutzung von Microsoft Azure erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer skalierbaren und ausfallsicheren IT-Infrastruktur) bzw. Art. 6 Abs. 1 lit. b DSGVO, sofern dies zur Durchführung von (vor-)vertraglichen Maßnahmen (z.B. Berechnungen im Preisrechner) erforderlich ist.
+                    </p>
+
+                    <h3 class="text-white font-semibold mt-4">Externe CDNs (Tailwind & Cloudflare)</h3>
+                    <p>
+                        Diese Website lädt Skripte und Designelemente (z.B. Icons über FontAwesome, Tailwind CSS) über externe Content Delivery Networks (u.a. cdnjs.cloudflare.com von Cloudflare Inc. sowie cdn.tailwindcss.com). Dies dient der Optimierung der Ladezeiten. Hierbei wird Ihre IP-Adresse an die Server der jeweiligen CDN-Betreiber übermittelt. Die Übermittlung basiert auf unserem berechtigten Interesse an einer schnellen und modernen Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO).
+                    </p>
+                </div>
+
+                <!-- Section: Datenerfassung & Kontaktformular (Formspree) -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">4. Datenerfassung auf dieser Website</h2>
+                    
+                    <h3 class="text-white font-semibold">Kontaktformular und Datenübertragung via Formspree</h3>
+                    <p>
+                        Wenn Sie uns per Kontaktformular oder über den Online-Preisrechner Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+                    </p>
+                    <p>
+                        Für den Empfang und die strukturierte Verarbeitung dieser Formularanfragen nutzen wir den technischen Dienstleister <strong>Formspree</strong> (Anbieter: Formspree, Inc., 21750 Hardy Oak Blvd, Ste 104, San Antonio, TX 78258, USA).
+                    </p>
+                    
+                    <div class="p-4 bg-brandBlue/5 border border-brandBlue/20 rounded-lg my-4">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation text-brandCyan"></i>
+                            Wichtiger Hinweis zur Datenübertragung in die USA:
+                        </p>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Formspree ist ein US-amerikanischer Dienstleister. Die von Ihnen im Formular eingegebenen Daten werden an Server von Formspree in den <strong>USA</strong> übertragen, dort verarbeitet und gespeichert. Die Übermittlung wird durch die sogenannten <strong>Standardvertragsklauseln (Standard Contractual Clauses - SCC)</strong> der EU-Kommission abgesichert. Hierdurch verpflichtet sich der Anbieter, das europäische Datenschutzniveau auch bei der Datenverarbeitung in den USA einzuhalten.
+                        </p>
+                    </div>
+
+                    <p>
+                        <strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO).
+                    </p>
+                    <p>
+                        Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
+                    </p>
+                </div>
+
+                <!-- Section: Webfonts (Google Fonts) -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">5. Plugins und Tools</h2>
+                    
+                    <h3 class="text-white font-semibold">Google Fonts (Online-Einbindung)</h3>
+                    <p>
+                        Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Web Fonts, die von Google bereitgestellt werden. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (Mutterunternehmen: Google LLC, USA).
+                    </p>
+                    <p>
+                        Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. 
+                    </p>
+                    <p>
+                        Die Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert, wodurch ein angemessenes Datenschutzniveau für eventuelle Datenübertragungen in die USA gewährleistet ist.
+                    </p>
+                    <p>
+                        <strong>Rechtsgrundlage:</strong> Die Nutzung von Google Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der einheitlichen und ästhetisch ansprechenden Darstellung unseres Online-Auftritts.
+                    </p>
+                </div>
+
+                <!-- Section: Rechte der Betroffenen -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">6. Ihre Rechte als betroffene Person</h2>
+                    <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
+                    <ul class="list-disc pl-5 space-y-2 mt-2 text-gray-400">
+                        <li>
+                            <strong class="text-white">Auskunft (Art. 15 DSGVO):</strong> Sie haben das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.
+                        </li>
+                        <li>
+                            <strong class="text-white">Berichtigung (Art. 16 DSGVO) oder Löschung (Art. 17 DSGVO):</strong> Sie können die Berichtigung unrichtiger oder die Löschung Ihrer bei uns gespeicherten Daten verlangen.
+                        </li>
+                        <li>
+                            <strong class="text-white">Einschränkung der Verarbeitung (Art. 18 DSGVO):</strong> Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+                        </li>
+                        <li>
+                            <strong class="text-white">Datenübertragbarkeit (Art. 20 DSGVO):</strong> Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.
+                        </li>
+                        <li>
+                            <strong class="text-white">Widerruf Ihrer Einwilligung (Art. 7 Abs. 3 DSGVO):</strong> Falls Datenverarbeitungsvorgänge auf Ihrer ausdrücklichen Einwilligung beruhen, können Sie diese jederzeit für die Zukunft widerrufen.
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-white font-semibold mt-4">Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+                    <p class="text-xs uppercase bg-white/5 p-3 rounded border border-white/5">
+                        WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN. DIE JEWEILIGE RECHTSGRUNDLAGE ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG.
+                    </p>
+                    
+                    <h3 class="text-white font-semibold mt-4">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+                    <p>
+                        Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres üblichen Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu.
+                    </p>
+                </div>
+
+                <!-- Section: Datensicherheit -->
+                <div class="space-y-3">
+                    <h2 class="text-lg font-bold text-brandCyan uppercase tracking-wide border-b border-white/5 pb-2">7. Datensicherheit</h2>
+                    <p>
+                        Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                    </p>
+                    <p>
+                        Wenn die SSL- oder TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="bg-black/80 border-t border-white/5 pt-16 pb-8 relative z-10 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Col 1: Brand & Intro -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo hintergrundlos.png" alt="S&N Media Logo" class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(0,102,255,0.4)]" onerror="this.style.display='none'">
+                        <span class="text-lg font-bold text-white tracking-wider">S&N Media</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Deine strategische Partner-Agentur für moderne Online-Sichtbarkeit im Nordwesten. Wir machen Social Media rentabel für den Mittelstand.
+                    </p>
+                    <div class="flex gap-4 text-lg">
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:text-brandCyan transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-brandCyan transition-colors">Startseite</a></li>
+                        <li><a href="index.html#about" class="hover:text-brandCyan transition-colors">Über Uns</a></li>
+                        <li><a href="index.html#leistungen" class="hover:text-brandCyan transition-colors">Unsere Leistungen</a></li>
+                        <li><a href="index.html#konfigurator" class="hover:text-brandCyan transition-colors">Live-Rechner</a></li>
+                        <li><a href="index.html#kontakt" class="hover:text-brandCyan transition-colors">Jetzt anfragen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Regionale Abdeckung -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Einzugsgebiet</h4>
+                    <ul class="space-y-2 text-xs text-gray-500">
+                        <li>Oldenburg, Hatten & Sandkrug</li>
+                        <li>Wardenburg & Landkreis Oldenburg</li>
+                        <li>Wildeshausen, Rastede, Wiefelstede</li>
+                        <li>Bad Zwischenahn, Edewecht & Westerstede</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Kontakt Schnellinfos -->
+                <div>
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Direktkontakt</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brandCyan"></i> sn@media-oldenburg.de</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brandCyan"></i> +49 (0) 177 2102172</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brandCyan"></i> Hatten, Deutschland</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Local SEO Text-Area -->
+            <div class="pt-8 border-t border-white/5 text-[10px] text-gray-600 text-center leading-relaxed">
+                <p>
+                    S&N Media betreut KMUs und Dienstleister im Nordwesten Deutschlands. Unser Fokus liegt auf erstklassigem Social-Media-Marketing in den Städten und Gemeinden: Oldenburg, Landkreis Oldenburg, Wildeshausen, Rastede, Wiefelstede, Bad Zwischenahn, Westerstede, Hatten, Edewecht, Sandkrug und Wardenburg.
+                </p>
+                <div class="flex justify-center gap-4 mt-4 text-xs font-semibold">
+                    <a href="impressum.html" class="hover:text-brandCyan transition-colors">Impressum</a>
+                    <span class="text-gray-800">|</span>
+                    <a href="datenschutz.html" class="text-brandCyan hover:text-white transition-colors">Datenschutz</a>
+                </div>
+                <p class="mt-4">&copy; 2026 S&N Media. Alle Rechte vorbehalten.</p>
+                <p class="mt-2 text-xs">Diese Webseite wurde erstellt durch <a href="https://tvs-digital.de" target="_blank" class="text-white hover:text-brandCyan transition-colors font-medium">TVS Digital</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Control
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
