@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S&N Media | Deine Social Media Agentur für Oldenburg & Region</title>
     
-    <!-- SEO Meta Tags -->
     <meta name="description" content="S&N Media - Professionelle Social Media Agentur für KMU in Oldenburg, Wildeshausen, Bad Zwischenahn und Umgebung. Mehr Sichtbarkeit, mehr Kunden, null Stress. Jetzt konfigurieren!">
     <meta name="keywords" content="Social Media Agentur, KMU, Oldenburg, Landkreis Oldenburg, Wildeshausen, Rastede, Wiefelstede, Bad Zwischenahn, Westerstede, Hatten, Edewecht, Sandkrug, Wardenburg, Instagram Marketing, TikTok Agentur, Facebook Marketing, Google Maps Optimierung">
     <meta name="author" content="S&N Media">
     <meta name="robots" content="index, follow">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Tailwind Custom Configuration -->
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -36,15 +33,12 @@
         }
     </script>
 
-    <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google Fonts (Plus Jakarta Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Custom Style Adjustments -->
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -107,20 +101,25 @@
         .glow-text {
             text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
         }
+
+        /* Cookie Banner Animations */
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .animate-slideUp {
+            animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
     </style>
 </head>
 <body class="text-gray-100 min-h-screen selection:bg-brandCyan selection:text-darkBg">
 
-    <!-- Gradient Background Highlights -->
     <div class="fixed top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-brandBlue/10 blur-[150px] pointer-events-none z-0"></div>
     <div class="fixed bottom-[-10%] right-[-10%] w-[700px] h-[700px] rounded-full bg-brandCyan/5 blur-[180px] pointer-events-none z-0"></div>
 
-<!-- Navigation Header -->
     <header class="sticky top-0 z-40 w-full bg-darkBg/75 backdrop-blur-md border-b border-white/5 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-3 group">
-                <!-- Neues PNG-Logo mit den originalen Styling- und Hover-Effekten -->
                 <img src="logo hintergrundlos.png" alt="Logo" class="h-10 w-auto filter drop-shadow-[0_0_8px_rgba(0,102,255,0.4)] transition-transform duration-300 group-hover:scale-105">
                 
                 <div class="flex flex-col">
@@ -129,7 +128,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center gap-8">
                 <a href="#about" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Über uns</a>
                 <a href="#leistungen" class="text-sm font-medium text-gray-300 hover:text-brandCyan transition-colors">Leistungen</a>
@@ -139,14 +137,12 @@
                 </a>
             </nav>
 
-            <!-- Mobile Menu Toggle Button -->
             <button id="mobile-menu-btn" class="md:hidden flex text-gray-400 hover:text-brandCyan focus:outline-none transition-colors" aria-label="Menü öffnen">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Navigation Panel -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-lg border-b border-white/5 py-6 px-4 flex flex-col gap-4 animate-fadeIn">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-lg border-b border-white/5 py-6 px-4 flex flex-col gap-4">
             <a href="#about" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Über uns</a>
             <a href="#leistungen" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Leistungen</a>
             <a href="#konfigurator" class="mobile-link text-lg font-medium py-2 px-3 hover:bg-white/5 rounded-lg transition-colors text-gray-200">Preisrechner</a>
@@ -156,11 +152,9 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="relative min-h-[calc(100vh-80px)] flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 z-10 overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <!-- Left Side: Copywriting Content -->
             <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandCyan/10 border border-brandCyan/25 text-brandCyan text-xs font-semibold tracking-wide uppercase mb-6 mx-auto lg:mx-0 w-fit">
                     <span class="w-2 h-2 rounded-full bg-brandCyan animate-ping"></span>
@@ -173,12 +167,10 @@
                 </h1>
                 
                 <p class="text-base sm:text-lg text-gray-400 max-w-xl mb-8 mx-auto lg:mx-0 leading-relaxed">
-                    Social Media ist heute kein Bonus mehr-<strong class="text-gray-200 font-semibold"> es ist eure Pflicht. </strong> 
-                Wir verwandeln digitale Präsenz in euer stärkstes Werkzeug für messbares Wachstum, Kundenbindung und Recruiting.
-
+                    Social Media ist heute kein Bonus mehr- <strong class="text-gray-200 font-semibold">es ist eure Pflicht.</strong> 
+                    Wir verwandeln digitale Präsenz in euer stärkstes Werkzeug für messbares Wachstum, Kundenbindung und Recruiting.
                 </p>
 
-                <!-- Action CTAs -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="#konfigurator" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brandBlue to-blue-700 hover:from-brandCyan hover:to-cyan-400 font-bold text-base transition-all duration-300 shadow-neon-glow hover:shadow-cyan-glow hover:text-darkBg flex items-center justify-center gap-2 group">
                         Preise kalkulieren <i class="fa-solid fa-calculator transition-transform group-hover:rotate-12"></i>
@@ -188,7 +180,6 @@
                     </a>
                 </div>
 
-                <!-- Trust Badges -->
                 <div class="mt-12 pt-8 border-t border-white/5 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-500">
                     <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandCyan"></i> Individuell auf KMU abgestimmt</div>
                     <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brandCyan"></i> Transparentes Dashboard</div>
@@ -196,46 +187,28 @@
                 </div>
             </div>
 
-            <!-- Right Side: Decorative & Brand Visual -->
             <div class="lg:col-span-5 relative flex justify-center items-center">
-                <!-- Outer Glowing Rings -->
                 <div class="absolute w-72 h-72 sm:w-[450px] sm:h-[450px] rounded-full border border-brandCyan/20 animate-[spin_40s_linear_infinite] pointer-events-none"></div>
                 <div class="absolute w-80 h-80 sm:w-[500px] sm:h-[500px] rounded-full border border-dashed border-brandBlue/20 animate-[spin_65s_linear_infinite] pointer-events-none"></div>
 
-                
-                    <!-- Enhanced SN Logo Container inside Glass Card -->
-<div class="relative w-full max-w-[200px] aspect-square flex items-center justify-center">
-    <img 
-        src="logo hintergrundlos.png" 
-        alt="SN Logo" 
-        class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(0,102,255,0.5)] transition-transform duration-500 group-hover:rotate-3"
-    />
-</div>
-                    
-                    <span class="mt-4 font-extrabold text-sm tracking-[0.3em] text-gray-400 group-hover:text-brandCyan transition-colors">S&N MEDIA</span>
+                <div class="relative w-full max-w-[200px] aspect-square flex items-center justify-center group">
+                    <img src="logo hintergrundlos.png" alt="SN Logo" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(0,102,255,0.5)] transition-transform duration-500 group-hover:rotate-3" />
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Über Uns (Inhaber-Vorstellung mit Slide-In) -->
     <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-black/30 border-y border-white/5 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-20">
                 <span class="text-xs font-bold text-brandCyan uppercase tracking-[0.2em]">Wer wir sind</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Die Gesichter hinter S&N Media</h2>
                 <p class="text-gray-400 mt-4">
-                    Wir sind Karl und Florian – beide 18 Jahre alt und langjährige Freunde.
-S&N Media entstand ursprünglich aus einem Schulprojekt, bei dem wir das riesige Potenzial von Social Media für lokale Betriebe erkannt haben. Aus dieser Idee wurde schnell mehr und wie haben den Schritt in die Selbstständigkeit gewagt.
-Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Social-Media-Kanäle strukturiert zu führen, Zeit zu sparen und echte Ergebnisse zu erzielen.
-
+                    Wir sind Karl und Florian – beide 18 Jahre alt und langjährige Freunde. S&N Media entstand ursprünglich aus einem Schulprojekt, bei dem wir das riesige Potenzial von Social Media für lokale Betriebe erkannt haben. Aus dieser Idee wurde schnell mehr und wir haben den Schritt in die Selbstständigkeit gewagt. Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Social-Media-Kanäle strukturiert zu führen, Zeit zu sparen und echte Ergebnisse zu erzielen.
                 </p>
             </div>
 
-            <!-- Inhaber Cards mit Slide-In-Effekt -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                
-                <!-- Inhaber 1: Slide-In von links -->
                 <div class="slide-in-left glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col sm:flex-row hover:border-brandBlue/30 transition-all duration-300">
                     <div class="sm:w-1/2 relative min-h-[250px] sm:min-h-auto">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Florian Schulte I Gründer von S&N Media" class="absolute inset-0 w-full h-full object-cover">
@@ -254,7 +227,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </div>
                 </div>
 
-                <!-- Inhaber 2: Slide-In von rechts -->
                 <div class="slide-in-right glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col sm:flex-row hover:border-brandCyan/30 transition-all duration-300">
                     <div class="sm:w-1/2 relative min-h-[250px] sm:min-h-auto order-1 sm:order-2">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Karl Niemann I Gründer von S&N Media" class="absolute inset-0 w-full h-full object-cover">
@@ -272,26 +244,19 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Section: Leistungen mit PopUp-Karten -->
     <section id="leistungen" class="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-20">
                 <span class="text-xs font-bold text-brandCyan uppercase tracking-[0.2em]">Was wir bieten</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Individuelle Lösungen für deinen Erfolg</h2>
-                <p class="text-gray-400 mt-4">
-                    Für jeden ein passendes Angebot.
-                </p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Individuelle Lösungen für deinen Erfolg</h2>
+                <p class="text-gray-400 mt-4">Für jeden ein passendes Angebot.</p>
             </div>
 
-            <!-- Leistungskarten-Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Card 1: Social Media Analyse -->
                 <div onclick="openModal('modal-analyse')" class="glass-card glass-card-hover rounded-2xl p-8 cursor-pointer relative group overflow-hidden">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-brandBlue/10 rounded-full blur-2xl group-hover:bg-brandBlue/20 transition-all"></div>
                     <div class="w-12 h-12 rounded-xl bg-brandBlue/10 border border-brandBlue/30 flex items-center justify-center text-brandBlue text-xl mb-6 group-hover:scale-110 transition-transform">
@@ -306,7 +271,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </span>
                 </div>
 
-                <!-- Card 2: Begleiteter Social-Media-Aufbau -->
                 <div onclick="openModal('modal-aufbau')" class="glass-card glass-card-hover rounded-2xl p-8 cursor-pointer relative group overflow-hidden">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-brandCyan/10 rounded-full blur-2xl group-hover:bg-brandCyan/20 transition-all"></div>
                     <div class="w-12 h-12 rounded-xl bg-brandCyan/10 border border-brandCyan/30 flex items-center justify-center text-brandCyan text-xl mb-6 group-hover:scale-110 transition-transform">
@@ -321,7 +285,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </span>
                 </div>
 
-                <!-- Card 3: Sorglos-Paket (Full-Service) -->
                 <div onclick="openModal('modal-sorglos')" class="glass-card glass-card-hover rounded-2xl p-8 cursor-pointer relative group overflow-hidden">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-brandBlue/20 rounded-full blur-2xl transition-all"></div>
                     <div class="w-12 h-12 rounded-xl bg-brandBlue/20 border border-brandBlue/40 flex items-center justify-center text-white text-xl mb-6 group-hover:scale-110 transition-transform">
@@ -335,13 +298,10 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         Mehr erfahren & Insights ansehen <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </span>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Modal PopUps für Leistungen -->
-    <!-- Modal 1: Social Media Analyse -->
     <div id="modal-analyse" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-darkBg/90 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
         <div class="glass-card rounded-2xl max-w-lg w-full p-8 border-brandBlue/30 shadow-neon-glow relative transform scale-95 transition-transform duration-300">
             <button onclick="closeModal('modal-analyse')" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
@@ -360,7 +320,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
         </div>
     </div>
 
-    <!-- Modal 2: Begleiteter Social-Media-Aufbau -->
     <div id="modal-aufbau" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-darkBg/90 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
         <div class="glass-card rounded-2xl max-w-lg w-full p-8 border-brandCyan/30 shadow-cyan-glow relative transform scale-95 transition-transform duration-300">
             <button onclick="closeModal('modal-aufbau')" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
@@ -379,7 +338,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
         </div>
     </div>
 
-    <!-- Modal 3: Sorglos-Paket -->
     <div id="modal-sorglos" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-darkBg/90 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
         <div class="glass-card rounded-2xl max-w-lg w-full p-8 border-brandBlue/30 shadow-neon-glow relative transform scale-95 transition-transform duration-300">
             <button onclick="closeModal('modal-sorglos')" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
@@ -398,8 +356,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
         </div>
     </div>
 
-
-<!-- Section: Interaktiver Konfigurator / Preisrechner -->
     <section id="konfigurator" class="py-24 px-4 sm:px-6 lg:px-8 bg-black/40 border-t border-white/5 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -410,13 +366,8 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 </p>
             </div>
 
-            <!-- Konfigurator Container -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                
-                <!-- Left Column: Inputs & Choices (8 cols) -->
                 <div class="lg:col-span-8 space-y-8">
-                    
-                    <!-- Schritt 1: Hauptpaket wählen -->
                     <div class="glass-card rounded-2xl p-6 sm:p-8 border-brandBlue/10">
                         <div class="flex items-center gap-3 mb-6">
                             <span class="w-8 h-8 rounded-full bg-brandBlue/20 border border-brandBlue/40 flex items-center justify-center font-bold text-brandBlue">1</span>
@@ -424,7 +375,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
 
                         <div class="space-y-4">
-                            <!-- Paket 1 Option -->
                             <label class="relative block cursor-pointer select-none group">
                                 <input type="radio" name="hauptpaket" value="analyse" class="peer hidden" onchange="calculatePrice()">
                                 <div class="p-5 rounded-xl border border-white/10 peer-checked:border-brandCyan/60 peer-checked:bg-brandCyan/5 bg-white/[0.02] group-hover:bg-white/[0.04] transition-all">
@@ -442,7 +392,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- Paket 2 Option -->
                             <label class="relative block cursor-pointer select-none group">
                                 <input type="radio" name="hauptpaket" value="aufbau" class="peer hidden" onchange="calculatePrice()">
                                 <div class="p-5 rounded-xl border border-white/10 peer-checked:border-brandCyan/60 peer-checked:bg-brandCyan/5 bg-white/[0.02] group-hover:bg-white/[0.04] transition-all">
@@ -460,7 +409,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- Paket 3 Option -->
                             <label class="relative block cursor-pointer select-none group">
                                 <input type="radio" name="hauptpaket" value="sorglos" class="peer hidden" onchange="calculatePrice()">
                                 <div class="p-5 rounded-xl border border-white/10 peer-checked:border-brandCyan/60 peer-checked:bg-brandCyan/5 bg-white/[0.02] group-hover:bg-white/[0.04] transition-all">
@@ -480,22 +428,17 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
                     </div>
 
-                    <!-- Schritt 2: Netzwerke / Plattformen -->
                     <div id="step-platforms" class="glass-card rounded-2xl p-6 sm:p-8 border-brandBlue/10 transition-all">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
                                 <span class="w-8 h-8 rounded-full bg-brandBlue/20 border border-brandBlue/40 flex items-center justify-center font-bold text-brandBlue">2</span>
                                 <h3 class="text-xl font-bold text-white">Plattform-Konfiguration</h3>
                             </div>
-                            <!-- Live Validation Hint -->
                             <span id="limit-hint" class="text-xs font-semibold px-2 py-1 rounded bg-brandCyan/15 text-brandCyan hidden animate-pulse">Max. 2 Plattformen inklusive!</span>
                         </div>
-
                         <p class="text-gray-400 text-xs mb-6">Passe deine Social-Media-Kanäle an. Je nach gewähltem Hauptmodul sind die Preise und Limits angepasst.</p>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                            
-                            <!-- Instagram -->
                             <label class="relative block cursor-pointer">
                                 <input type="checkbox" id="plat-instagram" class="peer hidden" onchange="handlePlatformChange('instagram')">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-2 transition-all">
@@ -507,7 +450,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- TikTok -->
                             <label class="relative block cursor-pointer">
                                 <input type="checkbox" id="plat-tiktok" class="peer hidden" onchange="handlePlatformChange('tiktok')">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-2 transition-all">
@@ -519,7 +461,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- Facebook -->
                             <label class="relative block cursor-pointer">
                                 <input type="checkbox" id="plat-facebook" class="peer hidden" onchange="handlePlatformChange('facebook')">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-2 transition-all">
@@ -531,7 +472,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- WhatsApp (Wird standardmäßig ausgeblendet und erst bei Paket 3 per JS aktiviert) -->
                             <label id="wrapper-whatsapp" class="relative hidden block cursor-pointer">
                                 <input type="checkbox" id="plat-whatsapp" class="peer hidden" onchange="handlePlatformChange('whatsapp')">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-2 transition-all">
@@ -542,11 +482,9 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                     <div id="price-tag-whatsapp" class="text-xs font-bold text-brandCyan whitespace-nowrap flex-shrink-0">Inklusive</div>
                                 </div>
                             </label>
-
                         </div>
                     </div>
 
-                    <!-- Schritt 3: Add-Ons -->
                     <div class="glass-card rounded-2xl p-6 sm:p-8 border-brandBlue/10">
                         <div class="flex items-center gap-3 mb-6">
                             <span class="w-8 h-8 rounded-full bg-brandBlue/20 border border-brandBlue/40 flex items-center justify-center font-bold text-brandBlue">3</span>
@@ -554,7 +492,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
 
                         <div class="space-y-4">
-                            <!-- Addon 1: Google Maps Optimierung -->
                             <label class="relative block cursor-pointer">
                                 <input type="checkbox" id="addon-google" class="peer hidden" onchange="calculatePrice()">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-4 transition-all">
@@ -572,7 +509,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                 </div>
                             </label>
 
-                            <!-- Addon 2: Erstkontakt für neue Anfragen -->
                             <label class="relative block cursor-pointer">
                                 <input type="checkbox" id="addon-initial" class="peer hidden" onchange="calculatePrice()">
                                 <div class="p-4 rounded-xl border border-white/10 bg-white/[0.01] peer-checked:bg-brandCyan/10 peer-checked:border-brandCyan flex items-center justify-between gap-4 transition-all">
@@ -581,7 +517,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                                         <div class="min-w-0">
                                             <div class="flex items-center gap-2">
                                                 <span class="text-sm font-semibold text-white block truncate">Erstkontakt &amp; Onboarding</span>
-                                                <!-- Info Button mit CSS-basiertem PopUp/Tooltip -->
                                                 <div class="relative group/popup inline-block flex-shrink-0">
                                                     <button type="button" class="text-gray-400 hover:text-white transition-colors focus:outline-none text-xs">
                                                         <i class="fa-solid fa-circle-info"></i>
@@ -602,10 +537,8 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                             </label>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Right Column: Live-Calculator Summary Widget (4 cols) -->
                 <div class="lg:col-span-4 lg:sticky lg:top-24 space-y-6">
                     <div class="glass-card rounded-2xl p-6 border-brandCyan/30 shadow-neon-glow relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-brandBlue/10 to-transparent pointer-events-none"></div>
@@ -615,7 +548,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                             Deine Zusammenfassung
                         </h4>
 
-                        <!-- Selected Items List -->
                         <div class="space-y-3 pb-6 border-b border-white/5 text-sm">
                             <div class="flex justify-between text-gray-400">
                                 <span>Hauptmodul:</span>
@@ -631,9 +563,7 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                             </div>
                         </div>
 
-                        <!-- Price display dynamic block -->
                         <div class="pt-6 pb-6 text-center">
-                            <!-- Block: Please select package first -->
                             <div id="no-package-warning" class="text-red-400 font-semibold text-xs py-2 px-3 rounded bg-red-500/15 border border-red-500/20 mb-3">
                                 <i class="fa-solid fa-circle-exclamation mr-1"></i> Bitte mindestens ein Hauptmodul wählen!
                             </div>
@@ -647,14 +577,12 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                             <span class="text-[10px] text-gray-500 block mt-1">Sämtliche Preise zzgl. 19% gesetzlicher MwSt.</span>
                         </div>
 
-                        <!-- Forward to CTA Link/Action -->
-                        <a id="btn-configure-submit" href="#kontakt" class="block w-full py-3.5 text-center font-bold text-sm text-darkBg bg-brandCyan hover:bg-white rounded-xl shadow-cyan-glow transition-all duration-300 transform hover:-translate-y-0.5 disabled:opacity-40 disabled:cursor-not-allowed">
+                        <a id="btn-configure-submit" href="#kontakt" class="block w-full py-3.5 text-center font-bold text-sm text-darkBg bg-brandCyan hover:bg-white rounded-xl shadow-cyan-glow transition-all duration-300 transform hover:-translate-y-0.5">
                             Konfiguration übernehmen
                         </a>
                         <p class="text-center text-[10px] text-gray-500 mt-3">Trägt die gewählten Daten automatisch in das folgende Kontaktformular ein.</p>
                     </div>
 
-                    <!-- Trust Factor Box -->
                     <div class="glass-card rounded-2xl p-6 border-white/5 flex gap-4 items-start">
                         <i class="fa-solid fa-shield-halved text-brandCyan text-2xl mt-1"></i>
                         <div>
@@ -665,12 +593,10 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-<!-- Section: Kontaktformular (Dynamic Integration) -->
     <section id="kontakt" class="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
@@ -682,11 +608,7 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
             </div>
 
             <div class="glass-card rounded-2xl p-8 sm:p-12 border-brandBlue/10 shadow-neon-glow">
-                
-                <!-- Formspree Integration -->
                 <form id="contact-form" action="https://formspree.io/f/mpqnabyz" method="POST" class="space-y-6">
-                    
-                    <!-- Hidden fields to capture configuration dynamically -->
                     <input type="hidden" name="Gewaehltes_Hauptpaket" id="form-hauptpaket" value="Keines">
                     <input type="hidden" name="Plattform_Instagram" id="form-plat-instagram" value="Nein">
                     <input type="hidden" name="Plattform_TikTok" id="form-plat-tiktok" value="Nein">
@@ -695,42 +617,30 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     <input type="hidden" name="Gesamtpreis_Kalkuliert" id="form-gesamtpreis" value="0.00">
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Name -->
                         <div>
                             <label for="name" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Dein Name / Ansprechpartner *</label>
-                            <input type="text" id="name" name="Name" required placeholder="z.B. Max Mustermann" 
-                                class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
+                            <input type="text" id="name" name="Name" required placeholder="z.B. Max Mustermann" class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
                         </div>
-
-                        <!-- Company -->
                         <div>
                             <label for="company" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Unternehmen *</label>
-                            <input type="text" id="company" name="Unternehmen" required placeholder="z.B. Mustermann GmbH & Co. KG" 
-                                class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
+                            <input type="text" id="company" name="Unternehmen" required placeholder="z.B. Mustermann GmbH & Co. KG" class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Email -->
                         <div>
                             <label for="email" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">E-Mail-Adresse *</label>
-                            <input type="email" id="email" name="_replyto" required placeholder="max@mustermann.de" 
-                                class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
+                            <input type="email" id="email" name="_replyto" required placeholder="max@mustermann.de" class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
                         </div>
-
-                        <!-- Phone -->
                         <div>
                             <label for="phone" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Telefonnummer / WhatsApp *</label>
-                            <input type="tel" id="phone" name="Telefon" required placeholder="z.B. 0441 123456" 
-                                class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
+                            <input type="tel" id="phone" name="Telefon" required placeholder="z.B. 0441 123456" class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
                         </div>
                     </div>
 
-                    <!-- Region / City (Local SEO reinforcement) -->
                     <div>
                         <label for="location" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Standort / Region *</label>
-                        <select id="location" name="Region" required 
-                            class="w-full bg-[#0a1128] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
+                        <select id="location" name="Region" required class="w-full bg-[#0a1128] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all">
                             <option value="" disabled selected>Bitte auswählen...</option>
                             <option value="Oldenburg">Oldenburg Stadt</option>
                             <option value="Wardenburg">Wardenburg</option>
@@ -743,14 +653,11 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </select>
                     </div>
 
-                    <!-- Nachricht / Message -->
                     <div>
                         <label for="message" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Wie können wir dir helfen? (Freiwillig)</label>
-                        <textarea id="message" name="Nachricht" rows="4" placeholder="Schreib uns gerne ein paar Zeilen zu deinen aktuellen Herausforderungen auf Social Media..." 
-                            class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all"></textarea>
+                        <textarea id="message" name="Nachricht" rows="4" placeholder="Schreib uns gerne ein paar Zeilen zu deinen aktuellen Herausforderungen auf Social Media..." class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandCyan focus:ring-1 focus:ring-brandCyan transition-all"></textarea>
                     </div>
 
-                    <!-- Visual Live Data Summary in Form -->
                     <div id="form-live-banner" class="hidden p-4 rounded-xl bg-brandCyan/5 border border-brandCyan/20 text-xs text-brandCyan flex items-center justify-between">
                         <span class="flex items-center gap-2">
                             <i class="fa-solid fa-sync animate-spin"></i>
@@ -759,11 +666,9 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         <span id="form-banner-price" class="font-bold"></span>
                     </div>
 
-                    <!-- DSGVO Checkbox -->
                     <div class="flex items-start gap-3 select-none pt-2">
                         <div class="flex items-center h-5">
-                            <input id="dsgvo" name="DSGVO_Einwilligung" type="checkbox" required
-                                class="w-4 h-4 rounded bg-white/[0.03] border border-white/10 text-brandCyan focus:ring-brandCyan focus:ring-offset-darkBg focus:ring-1 bg-[#0a1128] cursor-pointer transition-all">
+                            <input id="dsgvo" name="DSGVO_Einwilligung" type="checkbox" required class="w-4 h-4 rounded bg-white/[0.03] border border-white/10 text-brandCyan focus:ring-brandCyan focus:ring-offset-darkBg focus:ring-1 bg-[#0a1128] cursor-pointer transition-all">
                         </div>
                         <div class="text-xs text-gray-400">
                             <label for="dsgvo" class="cursor-pointer">
@@ -776,7 +681,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         </div>
                     </div>
 
-                    <!-- Submit -->
                     <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brandBlue to-blue-700 hover:from-brandCyan hover:to-cyan-400 font-extrabold text-base text-white hover:text-darkBg transition-all duration-300 shadow-neon-glow hover:shadow-cyan-glow flex items-center justify-center gap-2">
                         Kostenloses Erstgespräch anfordern <i class="fa-solid fa-paper-plane"></i>
                     </button>
@@ -789,12 +693,9 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
         </div>
     </section>
 
-<!-- Footer Area (incl. Local SEO Anchor keywords) -->
     <footer class="bg-black/80 border-t border-white/5 pt-16 pb-8 relative z-10 text-gray-400 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                
-                <!-- Col 1: Brand & Intro -->
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <img src="logo hintergrundlos.png" alt="S&N Media Logo" class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(0,102,255,0.4)]">
@@ -810,7 +711,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </div>
                 </div>
 
-                <!-- Col 2: Navigation Links -->
                 <div>
                     <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Navigation</h4>
                     <ul class="space-y-2 text-xs">
@@ -822,7 +722,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </ul>
                 </div>
 
-                <!-- Col 3: Regionale Abdeckung (SEO Booster) -->
                 <div>
                     <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Einzugsgebiet</h4>
                     <ul class="space-y-2 text-xs text-gray-500">
@@ -833,7 +732,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                     </ul>
                 </div>
 
-                <!-- Col 4: Kontakt Schnellinfos -->
                 <div>
                     <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Direktkontakt</h4>
                     <ul class="space-y-2 text-xs">
@@ -842,10 +740,8 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                         <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brandCyan"></i> Wardenburg, Deutschland</li>
                     </ul>
                 </div>
-
             </div>
 
-            <!-- Local SEO Text-Area (Fineprint) -->
             <div class="pt-8 border-t border-white/5 text-[10px] text-gray-600 text-center leading-relaxed">
                 <p>
                     S&N Media betreut KMUs und Dienstleister im Nordwesten Deutschlands. Unser Fokus liegt auf erstklassigem Social-Media-Marketing in den Städten und Gemeinden: Oldenburg, Landkreis Oldenburg, Wildeshausen, Rastede, Wiefelstede, Bad Zwischenahn, Westerstede, Hatten, Edewecht, Sandkrug und Wardenburg.
@@ -861,6 +757,64 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
         </div>
     </footer>
 
+    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-auto md:max-w-md w-auto z-50 hidden">
+        <div class="glass-card p-6 rounded-2xl border-brandBlue/20 shadow-neon-glow animate-slideUp flex flex-col gap-4">
+            <div class="flex gap-3 items-start">
+                <div class="w-10 h-10 rounded-xl bg-brandBlue/10 border border-brandBlue/30 flex items-center justify-center text-brandBlue text-lg flex-shrink-0">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Cookie-Einstellungen</h4>
+                    <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                        Wir nutzen Cookies, um unsere Website für dich optimal zu gestalten. Einige sind essenziell, andere helfen uns bei der Analyse & Marketing-Optimierung.
+                    </p>
+                </div>
+            </div>
+
+            <div id="cookie-options" class="hidden space-y-3 pt-2 border-t border-white/5 text-xs">
+                <div class="flex items-center justify-between p-2 rounded bg-white/[0.02] border border-white/5">
+                    <div>
+                        <span class="font-semibold text-gray-200 block">Essenziell</span>
+                        <span class="text-[10px] text-gray-500">Technisch notwendig (z.B. diese Auswahl)</span>
+                    </div>
+                    <input type="checkbox" checked disabled class="w-4 h-4 rounded bg-[#0a1128] text-brandCyan border-white/10 cursor-not-allowed">
+                </div>
+                <label class="flex items-center justify-between p-2 rounded bg-white/[0.02] border border-white/5 cursor-pointer hover:bg-white/[0.04] transition-all">
+                    <div>
+                        <span class="font-semibold text-gray-200 block">Analyse & Statistiken</span>
+                        <span class="text-[10px] text-gray-500">Hilft uns, die Nutzung der Seite zu verstehen</span>
+                    </div>
+                    <input type="checkbox" id="cookie-opt-analytics" class="w-4 h-4 rounded bg-[#0a1128] text-brandCyan border-white/10 cursor-pointer focus:ring-brandCyan">
+                </label>
+                <label class="flex items-center justify-between p-2 rounded bg-white/[0.02] border border-white/5 cursor-pointer hover:bg-white/[0.04] transition-all">
+                    <div>
+                        <span class="font-semibold text-gray-200 block">Marketing & Social Media</span>
+                        <span class="text-[10px] text-gray-500">Für optimierte Werbeanzeigen auf Meta & TikTok</span>
+                    </div>
+                    <input type="checkbox" id="cookie-opt-marketing" class="w-4 h-4 rounded bg-[#0a1128] text-brandCyan border-white/10 cursor-pointer focus:ring-brandCyan">
+                </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-2 pt-2 text-xs">
+                <button id="btn-cookie-settings" class="w-full py-2.5 rounded-xl border border-white/10 hover:bg-white/5 font-medium text-gray-300 transition-all">
+                    Einstellungen
+                </button>
+                <button id="btn-cookie-reject" class="w-full py-2.5 rounded-xl border border-red-500/20 bg-red-500/5 hover:bg-red-500/10 font-medium text-red-400 transition-all">
+                    Ablehnen
+                </button>
+                <button id="btn-cookie-accept-all" class="w-full py-2.5 rounded-xl bg-brandCyan hover:bg-white text-darkBg font-bold shadow-cyan-glow transition-all whitespace-nowrap">
+                    Alle erlauben
+                </button>
+            </div>
+            
+            <div class="text-center text-[10px] text-gray-500 flex justify-center gap-2">
+                <a href="impressum.html" class="hover:underline">Impressum</a>
+                <span>•</span>
+                <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+
     <script>
         // State-Management
         let currentPackage = '';
@@ -868,7 +822,7 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
             instagram: false,
             tiktok: false,
             facebook: false,
-            whatsapp: false // <-- HIER ERWEITERT
+            whatsapp: false
         };
         let googleMapsAddon = false;
 
@@ -914,55 +868,40 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('slide-in-visible');
-                        // Unobserve once animation is executed
                         observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Observe the founder cards
             document.querySelectorAll('.slide-in-left, .slide-in-right').forEach(el => {
                 slideObserver.observe(el);
             });
 
             // Initial calculation
             calculatePrice();
+
+            // Cookie Banner Initialization
+            initCookieBanner();
         });
 
-// Platform constraint logic & Selection handler
+        // Platform constraint logic & Selection handler
         function handlePlatformChange(platform) {
             const checkbox = document.getElementById(`plat-${platform}`);
             const isChecked = checkbox.checked;
 
             if (currentPackage === 'sorglos') {
-                // Bei Paket 3 ist WhatsApp fest inkludiert und Pflicht.
-                // Verhindert, dass der Nutzer WhatsApp manuell abwählt.
                 if (platform === 'whatsapp' && !isChecked) {
                     checkbox.checked = true;
                     return;
                 }
             }
 
-            // Save state
             selectedPlatforms[platform] = checkbox.checked;
             calculatePrice();
         }
 
-        // Hilfsfunktion für den Limit-Hinweis (wird hier nicht mehr zwingend benötigt, da Auswahl erlaubt ist)
-        function showLimitHint() {
-            const hint = document.getElementById('limit-hint');
-            if (hint) {
-                hint.innerText = "Zusätzliche Plattformen werden extra berechnet!";
-                hint.classList.remove('hidden');
-                setTimeout(() => {
-                    hint.classList.add('hidden');
-                }, 3500);
-            }
-        }
-
         // Live Calculator Algorithm
         function calculatePrice() {
-            // Fetch Radio value
             const packageRadios = document.getElementsByName('hauptpaket');
             let selectedRadio = '';
             for (const r of packageRadios) {
@@ -973,29 +912,23 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
 
             currentPackage = selectedRadio;
 
-            // --- WHATSAPP SICHTBARKEITSLOGIK & AUTOMATISIERUNG ---
             const whatsappWrapper = document.getElementById('wrapper-whatsapp');
             const whatsappCheckbox = document.getElementById('plat-whatsapp');
             
             if (whatsappWrapper && whatsappCheckbox) {
                 if (currentPackage === 'sorglos') {
-                    // Nur bei Paket 3 (Sorglos) anzeigen
                     whatsappWrapper.classList.remove('hidden');
-                    // AUTOMATISCH AUSWÄHLEN
                     if (!whatsappCheckbox.checked) {
                         whatsappCheckbox.checked = true;
                         selectedPlatforms.whatsapp = true;
                     }
                 } else {
-                    // Bei Paket 1 und 2 verstecken und Auswahl komplett zurücksetzen
                     whatsappWrapper.classList.add('hidden');
                     whatsappCheckbox.checked = false;
                     selectedPlatforms.whatsapp = false;
                 }
             }
-            // --- WHATSAPP LOGIK ENDE ---
 
-            // UI Elements to update
             const summaryPackage = document.getElementById('summary-package');
             const summaryPlatforms = document.getElementById('summary-platforms');
             const summaryAddons = document.getElementById('summary-addons');
@@ -1010,29 +943,23 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
             const priceTagFacebook = document.getElementById('price-tag-facebook');
             const priceTagWhatsapp = document.getElementById('price-tag-whatsapp');
 
-            // Zähle die aktuell ausgewählten Plattformen
             let activePlatforms = [];
             if (selectedPlatforms.instagram) activePlatforms.push('Instagram');
             if (selectedPlatforms.tiktok) activePlatforms.push('TikTok');
             if (selectedPlatforms.facebook) activePlatforms.push('Facebook');
             if (selectedPlatforms.whatsapp) activePlatforms.push('WhatsApp');
 
-            // --- DYNAMISCHE ANZEIGE DER PREISSCHILDER (Texte unter den Checkboxen) ---
             if (currentPackage === 'analyse') {
                 if (priceTagInstagram) priceTagInstagram.innerText = "Inklusive";
                 if (priceTagTiktok) priceTagTiktok.innerText = "+50 € / mtl.";
                 if (priceTagFacebook) priceTagFacebook.innerText = "+50 € / mtl.";
             } else if (currentPackage === 'aufbau') {
-                // Paket 2: 2 Plattformen inklusive. Wenn bereits 2 gewählt sind, kostet die nächste extra.
                 let costText = activePlatforms.length >= 2 ? "+50 € mtl." : "Inkl. (max. 2)";
-                
                 if (priceTagInstagram) priceTagInstagram.innerText = selectedPlatforms.instagram ? "Inklusive" : costText;
                 if (priceTagTiktok) priceTagTiktok.innerText = selectedPlatforms.tiktok ? "Inklusive" : costText;
                 if (priceTagFacebook) priceTagFacebook.innerText = selectedPlatforms.facebook ? "Inklusive" : costText;
             } else if (currentPackage === 'sorglos') {
-                // Paket 3: WhatsApp + 2 Plattformen inklusive. Wenn bereits 3 gewählt sind, kostet die 4. extra.
                 let costText = activePlatforms.length >= 3 ? "+100 € mtl." : "Inkl. (max. 3)";
-                
                 if (priceTagInstagram) priceTagInstagram.innerText = selectedPlatforms.instagram ? "Inklusive" : costText;
                 if (priceTagTiktok) priceTagTiktok.innerText = selectedPlatforms.tiktok ? "Inklusive" : costText;
                 if (priceTagFacebook) priceTagFacebook.innerText = selectedPlatforms.facebook ? "Inklusive" : costText;
@@ -1044,7 +971,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 if (priceTagWhatsapp) priceTagWhatsapp.innerText = "Optional";
             }
 
-            // If no package selected, lock actions and prompt
             if (!currentPackage) {
                 if (noPackageWarning) noPackageWarning.classList.remove('hidden');
                 if (btnSubmit) {
@@ -1054,13 +980,11 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 if (totalPriceText) totalPriceText.innerText = "--,- €";
                 if (priceInterval) priceInterval.innerText = "";
                 
-                // Reset form fields
                 const liveBanner = document.getElementById('form-live-banner');
                 if (liveBanner) liveBanner.classList.add('hidden');
                 return;
             }
 
-            // Unlock actions
             if (noPackageWarning) noPackageWarning.classList.add('hidden');
             if (btnSubmit) {
                 btnSubmit.classList.remove('opacity-40', 'cursor-not-allowed');
@@ -1071,7 +995,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
             let intervalText = '';
             let packageNameFriendly = '';
 
-            // Base price assignment
             if (currentPackage === 'analyse') {
                 basePrice = 100;
                 intervalText = '/ Monat';
@@ -1088,19 +1011,16 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
 
             if (summaryPackage) summaryPackage.innerText = packageNameFriendly;
 
-            // --- PREISBERECHNUNG FÜR DIE PLATTFORMEN ---
             let platformPrice = 0;
 
             if (currentPackage === 'analyse') {
                 if (selectedPlatforms.tiktok) platformPrice += 50;
                 if (selectedPlatforms.facebook) platformPrice += 50;
             } else if (currentPackage === 'aufbau') {
-                // Paket 2: 2 Kanäle inklusive. Jede weitere Plattform kostet +50 € mtl.
                 if (activePlatforms.length > 2) {
                     platformPrice += (activePlatforms.length - 2) * 50;
                 }
             } else if (currentPackage === 'sorglos') {
-                // Paket 3: WhatsApp + 2 Kanäle = 3 Kanäle inklusive. Ab dem 4. Kanal kostet es +100 €
                 if (activePlatforms.length > 3) {
                     platformPrice += 100;
                 }
@@ -1110,7 +1030,6 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 summaryPlatforms.innerText = activePlatforms.length > 0 ? activePlatforms.join(', ') : 'Keine gewählt';
             }
 
-            // Addon Selection
             googleMapsAddon = document.getElementById('addon-google').checked;
             let addonPrice = 0;
             let activeAddons = [];
@@ -1119,18 +1038,15 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
                 addonPrice += 200;
                 activeAddons.push('Google Maps (+200€)');
             }
-            activeAddons.push('Erstkontakt (Inkl.)'); // always pre-selected
+            activeAddons.push('Erstkontakt (Inkl.)');
 
             if (summaryAddons) summaryAddons.innerText = activeAddons.join(', ');
 
-            // Calculate Grand Total
             const finalPrice = basePrice + platformPrice + addonPrice;
 
-            // Update DOM pricing widget
             if (totalPriceText) totalPriceText.innerText = `${finalPrice} €`;
             if (priceInterval) priceInterval.innerText = intervalText;
 
-            // Map variables to hidden HTML Form Fields (dynamically parsed for Formspree transfer)
             if (document.getElementById('form-hauptpaket')) document.getElementById('form-hauptpaket').value = packageNameFriendly;
             if (document.getElementById('form-plat-instagram')) document.getElementById('form-plat-instagram').value = selectedPlatforms.instagram ? "Ja" : "Nein";
             if (document.getElementById('form-plat-tiktok')) document.getElementById('form-plat-tiktok').value = selectedPlatforms.tiktok ? "Ja" : "Nein";
@@ -1142,11 +1058,81 @@ Heute unterstützen wir regionale Unternehmen und Fachbetriebe dabei, ihre Socia
             if (document.getElementById('form-addon-google')) document.getElementById('form-addon-google').value = googleMapsAddon ? "Ja (+200€)" : "Nein";
             if (document.getElementById('form-gesamtpreis')) document.getElementById('form-gesamtpreis').value = `${finalPrice} € (zzgl. MwSt. ${intervalText})`;
 
-            // Form visual banner showing actual synchronization
             const liveBanner = document.getElementById('form-live-banner');
             const bannerPrice = document.getElementById('form-banner-price');
             if (liveBanner) liveBanner.classList.remove('hidden');
             if (bannerPrice) bannerPrice.innerText = `Kalkuliert: ${finalPrice} € ${intervalText}`;
+        }
+
+        // ==========================================
+        // DSGVO COMPLIANT COOKIE BANNER JAVASCRIPT
+        // ==========================================
+        function initCookieBanner() {
+            const banner = document.getElementById('cookie-banner');
+            const optionsDiv = document.getElementById('cookie-options');
+            const btnSettings = document.getElementById('btn-cookie-settings');
+            const btnReject = document.getElementById('btn-cookie-reject');
+            const btnAcceptAll = document.getElementById('btn-cookie-accept-all');
+            
+            const optAnalytics = document.getElementById('cookie-opt-analytics');
+            const optMarketing = document.getElementById('cookie-opt-marketing');
+
+            // Prüfen, ob der Nutzer bereits eine Wahl getroffen hat
+            const consent = localStorage.getItem('sn_cookie_consent');
+
+            if (!consent) {
+                // Wenn kein Consent existiert, das Banner anzeigen
+                banner.classList.remove('hidden');
+            } else {
+                // Falls bereits akzeptiert, lade die entsprechenden Skripte direkt beim Seitenstart
+                executeScripts(JSON.parse(consent));
+            }
+
+            // Button: Einstellungen einblenden
+            btnSettings.addEventListener('click', () => {
+                optionsDiv.classList.toggle('hidden');
+                btnSettings.innerText = optionsDiv.classList.contains('hidden') ? 'Einstellungen' : 'Speichern';
+            });
+
+            // Button: Alle Akzeptieren
+            btnAcceptAll.addEventListener('click', () => {
+                // Wenn Optionen offen sind, speichere den aktuellen Checkbox-Stand
+                if (!optionsDiv.classList.contains('hidden')) {
+                    const customConsent = {
+                        essential: true,
+                        analytics: optAnalytics.checked,
+                        marketing: optMarketing.checked
+                    };
+                    saveConsent(customConsent);
+                } else {
+                    // Andernfalls standardmäßig ALLES erlauben
+                    const allConsent = { essential: true, analytics: true, marketing: true };
+                    saveConsent(allConsent);
+                }
+            });
+
+            // Button: Alle Ablehnen (Nur essentielle)
+            btnReject.addEventListener('click', () => {
+                const rejectConsent = { essential: true, analytics: false, marketing: false };
+                saveConsent(rejectConsent);
+            });
+
+            function saveConsent(consentObject) {
+                localStorage.setItem('sn_cookie_consent', JSON.stringify(consentObject));
+                banner.classList.add('hidden');
+                executeScripts(consentObject);
+            }
+
+            function executeScripts(consentObj) {
+                if (consentObj.analytics) {
+                    console.log("Analyse-Skripte aktiv (z.B. Google Analytics)");
+                    // Hier kannst du künftig deinen Tracking-Code initialisieren
+                }
+                if (consentObj.marketing) {
+                    console.log("Marketing-Skripte aktiv (z.B. Meta-Pixel)");
+                    // Hier kannst du künftig deine Retargeting-Skripte initialisieren
+                }
+            }
         }
     </script>
 </body>
